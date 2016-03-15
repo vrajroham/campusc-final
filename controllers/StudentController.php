@@ -8,4 +8,7 @@ class StudentController extends BaseController {
 	public function index(){
 		return View::make('student.dashboard');
 	}
+	public function create(){
+		return View::make('student.create');
+	}
 }

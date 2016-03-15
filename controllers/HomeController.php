@@ -24,4 +24,14 @@ class HomeController extends BaseController {
 			$message->to(array("vaibhavraj.roham@gmail.com","priyanka.mantala@gmail.com"), "Hi")->subject('Welcome again!');
 		});
 	}
+	//student
+	public function registerStudentAjax(){
+		return View::make('home.ajax.register-student'); //Loading Ajax View
+	}
+	public function registerStudent(){
+		return View::make('home.pages.index');
+	}
+	public function studentTerms(){
+		return View::make('registration.ajax.student-terms');
+	}
 }
