@@ -25,6 +25,9 @@ Route::get('/registerCollege', array("uses"=>"HomeController@registerCollege","a
 //Student Routes
 Route::get('/student.dashboard', array("uses"=>"StudentController@index","as"=>"student.dashboard"));
 Route::get('/student/verification/', array("uses"=>"StudentController@index","as"=>"student/verification"));
+Route::get('/student.registration', array("uses"=>"StudentController@index","as"=>"student.registration"));
+Route::get('/registerStudent', array("uses"=>"HomeController@registerStudent","as"=>"register.student"));
+
 
 //------------------------------------------------------------------------------------------------------------------------
 
